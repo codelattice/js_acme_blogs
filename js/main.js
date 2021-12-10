@@ -25,7 +25,9 @@ function createSelectOptions(jsonData){
 
 function toggleCommentSection(postId){
 
-    if (!postId) return null;
+    if (!postId) return;
+
+    
 
 }
 
