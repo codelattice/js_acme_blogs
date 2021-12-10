@@ -42,7 +42,7 @@ function deleteChildElements(parentElement){
 
     if (!parentElement) return;
 
-    const parElem = document.querySelectorAll('${parentElement}')
+    const parElem = document.querySelectorAll(parentElement)
 
     let childElem = parentElement.lastElementChild;
     
