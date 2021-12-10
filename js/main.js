@@ -14,7 +14,7 @@ function createSelectOptions(jsonData){
 
     for (let i = 0; i < jsonData.length; i++){
 
-        const optElement = document.createElement(option);
+        const optElement = document.createElement("OPTION");
         option.value = i.id;
         option.textContent = i.name;
         err_ray += optElement;
