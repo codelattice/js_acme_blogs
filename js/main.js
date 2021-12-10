@@ -67,15 +67,15 @@ function toggleComments(){
     
 }
 
+function refreshPosts(){
+
+}
+
 function selectMenuChangeEventHandler(){
 
 }
 
 function initPage(){
-
-}
-
-function refreshPosts(){
 
 }
 
