@@ -27,17 +27,26 @@ function toggleCommentSection(postId){
 
     if (!postId) return;
 
-    
+
 
 }
 
 function toggleCommentButton(postId){
-
+    if (!postId) return;
 }
 
-function deleteChildElements(){
+function deleteChildElements(parentElement){
 
+    if (!parentElement) return;
+    let childElem = parentElement.lastElementChild;
+    
+    while (childElem){
+        parentElement.removeChild;
+        childElem = parentElement.lastChild;
+    }
 
+    return parentElement;
+    
 }
 
 function addButtonListeners(){
