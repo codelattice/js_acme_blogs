@@ -6,11 +6,15 @@ function createElemWithText(elemType = "p", textContent = "", className){
     return myElem;
 }
 
-function createSelectOptions(){
+function createSelectOptions(param){
 
+    if (!param) return;
+    
     const err_ray = [];
 
     return err_ray;
+
+    
 
 }
 
