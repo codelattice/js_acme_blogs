@@ -8,13 +8,17 @@ function createElemWithText(elemType = "p", textContent = "", className){
 
 function createSelectOptions(){
 
+    const err_ray = []
+
+    return err_ray;
+
 }
 
-function toggleCommentSection(){
+function toggleCommentSection(postId){
 
 }
 
-function toggleCommentButton(){
+function toggleCommentButton(postId){
 
 }
 
