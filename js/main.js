@@ -14,10 +14,10 @@ function createSelectOptions(jsonData){
 
     for (let i = 0; i < jsonData.length; i++){
 
-        let optElement = document.createElement("OPTION");
+        let optElem = document.createElement("OPTION");
         //optElement.value = jsonData[i].id;
         //optElement.textContent = jsonData[i].name;
-        err_ray += optElement;
+        err_ray.push(optElem)
     }
 
     return err_ray;
