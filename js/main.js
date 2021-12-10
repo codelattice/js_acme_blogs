@@ -42,7 +42,7 @@ function deleteChildElements(parentElement){
 
     if (!parentElement) return;
 
-    const parElem = $(parentElement).html();
+    const parElem = "${parentElement}".html();
 
     let childElem = parElem.lastElementChild;
     
