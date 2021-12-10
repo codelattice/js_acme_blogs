@@ -99,7 +99,9 @@ function displayPosts(){
 
 }
 
-function toggleComments(){
+function toggleComments(firstParam, secondParam){
+
+    if (!firstParam && !secondParam) return;
 
     event.target.listener = true;
     
