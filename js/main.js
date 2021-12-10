@@ -40,13 +40,13 @@ function deleteChildElements(parentElement){
     if (!parentElement) return;
     let childElem = parentElement.lastElementChild;
     
-    while (childElem){
+    while (childElem != NULL){
         parentElement.removeChild;
         childElem = parentElement.lastChild;
     }
 
     return parentElement;
-    
+
 }
 
 function addButtonListeners(){
