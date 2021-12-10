@@ -8,7 +8,7 @@ function createElemWithText(elemType = "p", textContent = "", className){
 
 function createSelectOptions(){
 
-    const err_ray = []
+    const err_ray = [];
 
     return err_ray;
 
