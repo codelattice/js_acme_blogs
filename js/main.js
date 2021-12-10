@@ -100,6 +100,8 @@ function displayPosts(){
 }
 
 function toggleComments(){
+
+    event.target.listener = true;
     
 }
 
