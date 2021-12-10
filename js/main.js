@@ -42,7 +42,7 @@ function deleteChildElements(parentElement){
     let childElem = parentElement.lastElementChild;
     
     while (childElem != NULL && childElem != 'undefined'){
-        parentElement = parentElement.removeChild;
+        childElem = parentElement.removeChild;
         childElem = parentElement.lastChild;
     }
 
