@@ -27,13 +27,13 @@ function toggleCommentSection(postId){
 
     if (!postId) return;
 
-    let testId = document.querySelectorAll(postId);
-
-
+    const section = document.querySelector(data-post-id == postId);
+    return section;
 }
 
 function toggleCommentButton(postId){
     if (!postId) return;
+
 }
 
 function deleteChildElements(parentElement){
