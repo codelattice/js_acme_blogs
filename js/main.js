@@ -34,6 +34,8 @@ function toggleCommentSection(postId){
 function toggleCommentButton(postId){
     if (!postId) return;
 
+    const section = document.getElementById('data-post-id == ${postId}');
+    return section;
 }
 
 function deleteChildElements(parentElement){
