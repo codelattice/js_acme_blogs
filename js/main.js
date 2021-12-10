@@ -27,7 +27,7 @@ function toggleCommentSection(postId){
 
     if (!postId) return;
 
-    let testId = document.querySelectorAll(#postId);
+    let testId = document.querySelectorAll(postId);
 
 
 }
