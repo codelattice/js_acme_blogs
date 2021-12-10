@@ -51,7 +51,7 @@ function deleteChildElements(parentElement){
         childElem = parentElement.lastChild;
     }*/
 
-    return parElem;
+    return parentElement;
 
 }
 
