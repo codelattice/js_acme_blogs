@@ -44,5 +44,41 @@ function getUserPosts(){
 }
 
 function getUser(){
+
+}
+
+function getPostComments(){
     
+}
+
+function displayComments(){
+
+}
+
+function createPosts(){
+
+}
+
+function displayPosts(){
+
+}
+
+function toggleComments(){
+    
+}
+
+function selectMenuChangeEventHandler(){
+
+}
+
+function initPage(){
+
+}
+
+function refreshPosts(){
+
+}
+
+function initApp(){
+
 }
