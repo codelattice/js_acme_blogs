@@ -1,5 +1,9 @@
-function createElemWithText(){
-
+function createElemWithText(elemType = "p", textContent = "", className){
+    const myElem = document.createElement(elemType);
+    myElem.id = "stuff";
+    myElem.textContent = textContent;
+    if (className) myElem.classList.add(className);
+    return myElem;
 }
 
 function createSelectOptions(){
