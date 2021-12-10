@@ -6,16 +6,21 @@ function createElemWithText(elemType = "p", textContent = "", className){
     return myElem;
 }
 
-function createSelectOptions(param){
+function createSelectOptions(jsonData){
 
-    if (!param) return;
-    
+    if (!jsonData) return;
+
     const err_ray = [];
 
+    for (let i = 0; i < jsonData.length; i++){
+
+        const optElement = document.createElement(option);
+        option.value = i.id;
+        option.textContent = i.name;
+        err_ray += optElement;
+    }
+
     return err_ray;
-
-    
-
 }
 
 function toggleCommentSection(postId){
