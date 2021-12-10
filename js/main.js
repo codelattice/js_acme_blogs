@@ -12,7 +12,7 @@ function createSelectOptions(jsonData){
 
     let err_ray = [];
 
-    for (let i = 0; i < jsonData.length; i++){
+    for (let i = 0; i < jsonData.length - 1; i++){
 
         let optElement = document.createElement("OPTION");
         optElement.value = i.id;
