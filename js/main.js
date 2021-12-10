@@ -42,16 +42,16 @@ function deleteChildElements(parentElement){
 
     if (!parentElement) return;
 
-    const parElem = document.querySelectorAll(parentElement)
+    const parElem = $(parentElement).html();
 
-    let childElem = parentElement.lastElementChild;
+    let childElem = parElem.lastElementChild;
     
     /*while (childElem != NULL && childElem != 'undefined'){
         childElem = parentElement.removeChild;
         childElem = parentElement.lastChild;
     }*/
 
-    return parentElement;
+    return parElem;
 
 }
 
