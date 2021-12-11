@@ -63,8 +63,9 @@ function removeButtonListeners(){
 
 }
 
-function createComments(){
+function createComments(param){
 
+    if (!param) return;
     let frag = document.createDocumentFragment();
     return frag;
 }
