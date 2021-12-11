@@ -65,6 +65,8 @@ function removeButtonListeners(){
 
 function createComments(){
 
+    let frag = document.createDocumentFragment();
+    return frag;
 }
 
 function populateSelectMenu(){
