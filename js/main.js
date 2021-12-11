@@ -113,6 +113,10 @@ function refreshPosts(){
 
 function selectMenuChangeEventHandler(){
 
+    let err_ray = [];
+
+    return err_ray;
+
 }
 
 function initPage(){
