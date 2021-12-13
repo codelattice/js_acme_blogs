@@ -71,7 +71,7 @@ function createComments(param){
         const rtickle = document.createElement("article");
         const h3Element = createElemWithText('h3', param.name);
         const paraElem = createElemWithText('p', param.body)
-        const paraElem1 = createElemWithText('p', 'From: ' + param + '.email');
+        const paraElem1 = createElemWithText('p', 'From: ' + param);
         rtickle.append(h3Element);
         rtickle.append(paraElem);
         rtickle.append(paraElem1);
