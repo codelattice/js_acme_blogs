@@ -74,8 +74,8 @@ function createComments(param){
         rtickle.append(h3Element);
         rtickle.append(paraElem);
         frag.append(rtickle);
+        return frag;
     }
-    return frag;
 }
 
 function populateSelectMenu(){
