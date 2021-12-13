@@ -141,8 +141,10 @@ const displayComments = async(postId) =>{
 
 }
 
-function createPosts(){
-
+function createPosts(param){
+    if (!param) return;
+    let frag = createDocumentFragment();
+    return frag;
 }
 
 function displayPosts(){
@@ -164,6 +166,7 @@ function refreshPosts(){
 function selectMenuChangeEventHandler(){
 
     let err_ray = [];
+
 
     return err_ray;
 
