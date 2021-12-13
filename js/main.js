@@ -169,7 +169,7 @@ function createPosts(param){
         const h2Element = createElemWithText('h2', para.title);
         const paraElem = createElemWithText('p', para.body)
         const paraElem1 = createElemWithText('p', 'From: ' + para.email);
-        rtickle.append(h3Element);
+        rtickle.append(h2Element);
         rtickle.append(paraElem);
         rtickle.append(paraElem1);
         frag.append(rtickle);
