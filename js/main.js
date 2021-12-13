@@ -160,7 +160,7 @@ const displayComments = async(postId) =>{
     return secElement;
 }
 
-const createPosts = async(param) => {
+const createPosts = async(param) =>{
     if (!param) return;
     let frag = document.createDocumentFragment();
 
@@ -169,14 +169,10 @@ const createPosts = async(param) => {
         const h2Element = createElemWithText('h2', para.title);
         const paraElem = createElemWithText('p', para.body)
         const paraElem1 = createElemWithText('p', 'Post ID: ' + para.id);
-        let author = await getUser(para.userID);    
-        const paraElem2 = createElement('p'); //needs to be createElemWithText
-        const paraElem3 = createElement('p');
+        const paraElem2 = createElemWithText()
         rtickle.append(h2Element);
         rtickle.append(paraElem);
         rtickle.append(paraElem1);
-        rtickle.append(paraElem2);
-        rtickle.append(paraElem3);
         frag.append(rtickle);
     });
     return frag;
