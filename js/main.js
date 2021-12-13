@@ -114,7 +114,7 @@ const getPostComments = async(postId) => {
     try{    
         if (!postId) return;
         let filler = postId;
-        const res = await fetch('https://jsonplaceholder.typicode.com/posts/' + filler);
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts/' + filler + '/comments');
         if (!res.ok) throw new Error("Status code not in 200-299 range");
         return await res.json();
     } catch(err){
