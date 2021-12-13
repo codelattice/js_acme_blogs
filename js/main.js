@@ -190,6 +190,12 @@ const displayPosts = async(postsData) => {
     const mainElem = document.querySelector("#main");
     //if (!postsData
     let frag = document.createDocumentFragment();
+    const test = document.createElement("test");
+    const newTest = document.createElement("new test");
+    const newestTest = document.createElement("newest test");
+    frag.append(test);
+    frag.append(newTest);
+    frag.append(newestTest);
     //mainElem.append(frag);
     return frag;
 
