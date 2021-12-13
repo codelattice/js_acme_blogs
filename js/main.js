@@ -187,7 +187,7 @@ function createPosts(param){
 
 const displayPosts = async(postsData) => {
     if (!postsData) return ("P");
-    const mainElem = document.querySelector("#main");
+    const mainElem = document.querySelector("main");
     //if (!postsData
     let frag = document.createDocumentFragment();
     const test = document.createElement("test");
