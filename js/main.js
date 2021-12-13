@@ -28,8 +28,14 @@ function toggleCommentSection(postId){
     if (!postId) return;
 
     const section = document.getElementById('data-post-id == ${postId}');
-    section = toggle('hide');
-    return section;
+
+    if (section == NULL){
+        return section;
+    }
+    else{
+        section = toggle('hide');
+        return section;
+    }
 }
 
 function toggleCommentButton(postId){
