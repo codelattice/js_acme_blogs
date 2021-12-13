@@ -43,7 +43,7 @@ function deleteChildElements(parentElement){
     if (!parentElement?.tagName) return;
 
     while (parentElement.lastChild) {
-        parentElement.removeChild(parent.lastChild);
+        parentElement.removeChild(parentElement.lastChild);
     }
 
    /*const parElem = "${parentElement}".html();
