@@ -152,7 +152,7 @@ const getPostComments = async(postId) => {
 const displayComments = async(postId) =>{
     if (!postId) return;
     let secElement = document.createElement("section");
-    secElement.setAttribute(secElement.dataset.postId, "postId");
+    secElement.setAttribute("postId", secElement.dataset.postId);
     secElement.classList.add("comment");
     secElement.classList.add("hide");
     const comments = await getPostComments(postId);
