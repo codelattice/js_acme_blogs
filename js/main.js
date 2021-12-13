@@ -67,15 +67,16 @@ function createComments(param){
 
     if (!param) return;
     let frag = document.createDocumentFragment();
-    for (let i = 0; i < param.length(); i++){
+    param.forEach((param) => {
         const rtickle = document.create(article);
-        const h3Element = createElemWithText('p', comment.body);
+        const h3Element = createElemWithText('h3', comment.name);
+        const paraElem1 = createElemtWithText('p', coment.body)
         const paraElem = createElemWithText('h3', 'From: ' + param);
         rtickle.append(h3Element);
         rtickle.append(paraElem);
         frag.append(rtickle);
-        return frag;
-    }
+    });
+    return frag;
 }
 
 function populateSelectMenu(){
