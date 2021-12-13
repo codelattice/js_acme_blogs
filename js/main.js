@@ -123,7 +123,11 @@ const getPostComments = async(postId) => {
     
 }
 
-function displayComments(){
+const displayComments = async(postId) =>{
+    if (!postId) return;
+    let filler = postId;
+    const secElement = document.createElement();
+    const comments = await getPostComments(postId);
 
 }
 
