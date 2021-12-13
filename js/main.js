@@ -177,7 +177,7 @@ function createPosts(param){
         rtickle.append(paraElem1);
         rtickle.append(paraElem2);
         rtickle.append(paraElem3);
-        rtickleappend(button);
+        rtickle.append(button);
         frag.append(rtickle);
     });
     return frag;
