@@ -183,12 +183,17 @@ function refreshPosts(param){
     return results; //stub
 }
 
-function selectMenuChangeEventHandler(){
+const selectMenuChangeEventHandler = async(event) =>{
 
     let err_ray = [];
+    let air_ray = [];
+    let userID = event?.target?.value || 1;
+    const posts = await getUserPosts(userID);
+    air_ray =  refreshPosts(posts);
 
 
-    return err_ray;
+
+    return err_ray[userID, posts, air_ray];
 
 }
 
