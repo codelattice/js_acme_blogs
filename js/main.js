@@ -137,8 +137,8 @@ const displayComments = async(postId) =>{
     if (!postId) return;
     let filler = postId;
     const secElement = document.createElement("section");
-    const comments = await document.getPostComments(postId);
-    const fragment = document.createComments(comments);
+    const comments = await getPostComments(postId);
+    const fragment = createComments(comments);
     secElement.append(fragment);
     return secElement;
 }
