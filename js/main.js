@@ -75,8 +75,18 @@ function createComments(param){
     return frag;
 }
 
-function populateSelectMenu(){
-    
+function populateSelectMenu(param){
+
+    if (!param) return;
+
+    let selectElem = document.querySelector('#selectMenu');
+    let selectOpts = createSelectOptions(param);
+
+    /*for (let i = 0; i < selectOpts.length; i++){
+        selectElem += selectElem.append(i);
+    }*/
+
+    return selectElem;
 }
 
 const getUsers = async() => {
