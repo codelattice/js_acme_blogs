@@ -170,8 +170,8 @@ const createPosts = async(param) => {
         const paraElem = createElemWithText('p', para.body)
         const paraElem1 = createElemWithText('p', 'Post ID: ' + para.id);
         let author = await getUser(para.userID);    
-        const paraElem2 = createElemWithText('p');
-        const paraElem3 = createElemWithText('p');
+        const paraElem2 = createElement('p'); //needs to be createElemWithText
+        const paraElem3 = createElement('p');
         rtickle.append(h2Element);
         rtickle.append(paraElem);
         rtickle.append(paraElem1);
