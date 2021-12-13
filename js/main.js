@@ -67,11 +67,11 @@ function createComments(param){
 
     if (!param) return;
     let frag = document.createDocumentFragment();
-    param.forEach((param) => {
+    param.forEach((para) => {
         const rtickle = document.createElement("article");
-        const h3Element = createElemWithText('h3', param.name);
-        const paraElem = createElemWithText('p', param.body)
-        const paraElem1 = createElemWithText('p', 'From: ' + param + '.email');
+        const h3Element = createElemWithText('h3', para.name);
+        const paraElem = createElemWithText('p', para.body)
+        const paraElem1 = createElemWithText('p', 'From: ' + para + '.email');
         rtickle.append(h3Element);
         rtickle.append(paraElem);
         rtickle.append(paraElem1);
