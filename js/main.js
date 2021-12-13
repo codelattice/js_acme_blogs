@@ -87,7 +87,8 @@ const getUsers = async() => {
 const getUserPosts = async(userID) => {
     try{
         if (!userID) return;
-        const res = await fetch('https://jsonplaceholder.typicode.com/users/${userID}/posts');
+        let filler = userID;
+        const res = await fetch('https://jsonplaceholder.typicode.com/users/' + filler + '/posts');
         if (!res.ok) throw new Error("Status code not in 200-299 range");
         return await res.json();
     } catch(err){
@@ -99,8 +100,8 @@ const getUser = async (userId) => {
     try{
         
         if (!userId) return;
-        
-        const res = await fetch('https://jsonplaceholder.typicode.com/users/${userId}');
+        let filler = userId;
+        const res = await fetch('https://jsonplaceholder.typicode.com/users/' + filler);
         if (!res.ok) throw new Error("Status code not in 200-299 range");
         return await res.json();
     } catch(err){
