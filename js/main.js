@@ -68,7 +68,7 @@ function createComments(param){
     if (!param) return;
     let frag = document.createDocumentFragment();
     param.forEach((param) => {
-        const rtickle = document.createElement();
+        const rtickle = document.createElement("article");
         const h3Element = createElemWithText('h3', comment.name);
         const paraElem1 = createElemWithText('p', coment.body)
         const paraElem = createElemWithText('h3', 'From: ' + param);
