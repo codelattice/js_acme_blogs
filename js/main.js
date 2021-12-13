@@ -160,7 +160,7 @@ const displayComments = async(postId) =>{
     return secElement;
 }
 
-const createPosts = async(param) =>{
+function createPosts(param){
     if (!param) return;
     let frag = document.createDocumentFragment();
 
