@@ -196,7 +196,7 @@ const displayPosts = async(postsData) => {
     frag.append(test);
     frag.append(newTest);
     frag.append(newestTest);
-    //mainElem.append(frag);
+    mainElem.append(frag);
     return frag;
 
 }
