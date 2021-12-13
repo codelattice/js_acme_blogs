@@ -169,15 +169,17 @@ function createPosts(param){
         const h2Element = createElemWithText('h2', para.title);
         const paraElem = createElemWithText('p', para.body)
         const paraElem1 = createElemWithText('p', 'Post ID: ' + para.id);
-        const paraElem2 = document.createElement('p');
-        const paraElem3 = document.createElement('p');
-        const button = document.createElement("button");
+        const paraElem2 = document.createElement('p'); //stub
+        const paraElem3 = document.createElement('p'); //stub
+        const button = document.createElement("button"); //stub
+        const section = document.createElement("section"); //stub
         rtickle.append(h2Element);
         rtickle.append(paraElem);
         rtickle.append(paraElem1);
         rtickle.append(paraElem2);
         rtickle.append(paraElem3);
         rtickle.append(button);
+        rtickle.append(section);
         frag.append(rtickle);
     });
     return frag;
