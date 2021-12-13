@@ -42,11 +42,15 @@ function deleteChildElements(parentElement){
 
     if (!parentElement?.tagName) return;
 
-    //const parElem = "${parentElement}".html();
+    while (parentElement.lastChild) {
+        parentElement.removeChild(parent.lastChild);
+    }
 
-   // let childElem = parElem.lastElementChild;
+   /*const parElem = "${parentElement}".html();
+
+   let childElem = parElem.lastElementChild;
     
-    /*while (childElem != NULL && childElem != 'undefined'){
+    while (childElem != NULL && childElem != 'undefined'){
         childElem = parentElement.removeChild;
         childElem = parentElement.lastChild;
     }*/
