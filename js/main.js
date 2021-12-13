@@ -163,13 +163,26 @@ const displayComments = async(postId) =>{
 function createPosts(param){
     if (!param) return;
     let frag = document.createDocumentFragment();
+
+    param.forEach((para) => {
+        const rtickle = document.createElement("article");
+        const h2Element = createElemWithText('h2', para.title);
+        const paraElem = createElemWithText('p', para.body)
+        const paraElem1 = createElemWithText('p', 'From: ' + para.email);
+        rtickle.append(h3Element);
+        rtickle.append(paraElem);
+        rtickle.append(paraElem1);
+        frag.append(rtickle);
+    });
     return frag;
 }
 
 const displayPosts = async(postsData) => {
-    if (!postsData) return ("P");
+    //if (!postsData) return ("P");
     const mainElem = document.querySelector("#main");
+    //if (!postsData
     let frag = document.createDocumentFragment();
+    //mainElem.append(frag);
     return frag;
 
 }
