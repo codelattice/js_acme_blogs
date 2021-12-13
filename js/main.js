@@ -191,8 +191,8 @@ const displayPosts = async(postsData) => {
     //if (!postsData
     let frag = document.createDocumentFragment();
     const test = document.createElement("test");
-    const newTest = document.createElement("new test");
-    const newestTest = document.createElement("newest test");
+    const newTest = document.createElement("newtest");
+    const newestTest = document.createElement("newesttest");
     frag.append(test);
     frag.append(newTest);
     frag.append(newestTest);
