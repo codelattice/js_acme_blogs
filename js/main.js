@@ -209,5 +209,4 @@ function initPage(){
 }
 
 function initApp(){
-
 }
