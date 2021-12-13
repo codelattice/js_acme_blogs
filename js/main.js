@@ -29,7 +29,7 @@ function toggleCommentSection(postId){
 
     const section = document.getElementById('data-post-id == ${postId}');
 
-    if (section == NULL){
+    if (!section){
         return section;
     }
     else{
