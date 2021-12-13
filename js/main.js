@@ -152,9 +152,9 @@ const getPostComments = async(postId) => {
 const displayComments = async(postId) =>{
     if (!postId) return;
     let secElement = document.createElement("section");
-    section.dataset.postId;
+    secElement.dataset.postId;
     const comments = await getPostComments(postId);
-    const fragment = await createComments(comments);
+    const fragment = createComments(comments);
     secElement.append(fragment);
     return secElement;
 }
