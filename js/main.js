@@ -143,7 +143,7 @@ const displayComments = async(postId) =>{
 
 function createPosts(param){
     if (!param) return;
-    let frag = createDocumentFragment();
+    let frag = document.createDocumentFragment();
     return frag;
 }
 
