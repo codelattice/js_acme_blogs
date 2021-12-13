@@ -193,9 +193,6 @@ const displayPosts = async(postsData) => {
     const test = document.createElement("test");
     const newTest = document.createElement("newtest");
     const newestTest = document.createElement("newesttest");
-    frag.append(test);
-    frag.append(newTest);
-    frag.append(newestTest);
     mainElem.append(frag);
     return frag;
 
