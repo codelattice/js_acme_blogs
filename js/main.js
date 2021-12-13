@@ -59,6 +59,9 @@ function deleteChildElements(parentElement){
 
 function addButtonListeners(){
 
+    const buttons = document.querySelectorAll('.btn');
+    return buttons;
+
 }
 
 function removeButtonListeners(){
