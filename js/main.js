@@ -145,7 +145,7 @@ function createPosts(param){
     if (!param) return;
     let frag = document.createDocumentFragment();
     return frag;
-}
+}dfdsfdsffdsfs
 
 function displayPosts(){
 
