@@ -40,7 +40,7 @@ function toggleCommentButton(postId){
 
 function deleteChildElements(parentElement){
 
-    if (!parentElement) return;
+    if (!parentElement?.tagName) return;
 
     //let parElem = "${parentElement}".html();
     //let childElem = parElem.lastElementChild;
