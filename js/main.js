@@ -145,7 +145,7 @@ function createPosts(param){
     if (!param) return;
     let frag = document.createDocumentFragment();
     return frag;
-}dfdsfdsffdsfs
+}
 
 function displayPosts(){
 
@@ -159,8 +159,11 @@ function toggleComments(firstParam, secondParam){
     
 }
 
-function refreshPosts(){
+function refreshPosts(param){
 
+    if (!param) return;
+    let results = []; //stub
+    return results; //stub
 }
 
 function selectMenuChangeEventHandler(){
