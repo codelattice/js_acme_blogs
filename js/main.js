@@ -35,6 +35,8 @@ function toggleCommentButton(postId){
     if (!postId) return;
 
     const section = document.getElementById('data-post-id == ${postId}');
+    const selectedButton = document.querySelector('button[data-post-id ==' + postId + ']');  
+
     return section;
 }
 
@@ -42,8 +44,7 @@ function deleteChildElements(parentElement){
 
     if (!parentElement?.tagName) return;
 
-    const parElem = "${parentElement}".html();
-    let childElem = parElem.lastElementChild;
+    let childElem = parentElement.lastElementChild;
     
     while (childElem != NULL && childElem != 'undefined'){
         childElem = parentElement.removeChild;
@@ -70,7 +71,7 @@ function createComments(param){
         const rtickle = document.createElement("article");
         const h3Element = createElemWithText('h3', param.name);
         const paraElem = createElemWithText('p', param.body)
-        const paraElem1 = createElemWithText('p', 'From: ' + param);
+        const paraElem1 = createElemWithText('p', 'From: ' + param + '.email');
         rtickle.append(h3Element);
         rtickle.append(paraElem);
         rtickle.append(paraElem1);
