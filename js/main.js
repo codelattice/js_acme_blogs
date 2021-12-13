@@ -74,8 +74,14 @@ function populateSelectMenu(){
     
 }
 
-function getUsers(){
-
+const getUsers = async() => {
+    try{
+        const res = await fetch("https://jsonplaceholder.typicode.com/users/");
+        if (!res.ok) throw new Error("Status code not in 200-299 range");
+        return await res.json();
+    } catch(err){
+        console.error(err);
+    }
 }
 
 function getUserPosts(){
