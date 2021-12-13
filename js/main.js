@@ -153,8 +153,8 @@ const displayComments = async(postId) =>{
     if (!postId) return;
     let secElement = document.createElement("section");
     //secElement.setAttribute("postId", secElement.dataset.postId);
-    const idPost = secElement.dataset.postId;
-    secElement.dataset.postId;
+    //const idPost = secElement.dataset.postId;
+    secElement.dataset.postId = postId;
     secElement.classList.add("comments", "hide");
     const comments = await getPostComments(postId);
     const fragment = createComments(comments);
