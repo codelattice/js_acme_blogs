@@ -92,7 +92,7 @@ function populateSelectMenu(param){
 
     let selectElem = document.querySelector('#selectMenu');
     let selectOpts = createSelectOptions(param);
-
+    
     /*for (let i = 0; i < selectOpts.length; i++){
         selectElem += selectElem.append(i);
     }*/
@@ -167,7 +167,7 @@ function createPosts(param){
 }
 
 const displayPosts = async(postsData) => {
-    if (!postsData) return ("<P>");
+    if (!postsData) return ("P");
     const mainElem = document.querySelector("#main");
     let frag = document.createDocumentFragment();
     return frag;
