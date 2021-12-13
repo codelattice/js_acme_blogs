@@ -193,9 +193,9 @@ const selectMenuChangeEventHandler = async(event) =>{
     let userID = event?.target?.value
     const posts = await getUserPosts(userID);
     
-    err_ray.push(userID);
-    err_ray.push(posts);
     err_ray.push(refreshPostsArray);
+    err_ray.push(posts);
+    err_ray.push(userID);
 
     return err_ray;
 
