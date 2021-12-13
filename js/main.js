@@ -35,8 +35,6 @@ function toggleCommentButton(postId){
     if (!postId) return;
 
     const section = document.getElementById('data-post-id == ${postId}');
-    const selectedButton = document.querySelector('button[data-post-id ==' + postId + ']');  
-
     return section;
 }
 
