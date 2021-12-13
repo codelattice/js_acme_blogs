@@ -82,7 +82,11 @@ function getUserPosts(){
 
 }
 
-function getUser(){
+function getUser(userId){
+
+    if (!userId) return;
+
+    
 
 }
 
