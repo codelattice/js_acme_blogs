@@ -168,7 +168,7 @@ const displayComments = async(postId) =>{
     return secElement;
 }
 
-const createPosts = async(param) => {
+function createPosts(param) {
     if (!param) return;
     let frag = document.createDocumentFragment();
 
@@ -177,7 +177,7 @@ const createPosts = async(param) => {
         const h2Element = createElemWithText('h2', para.title);
         const paraElem = createElemWithText('p', para.body)
         const paraElem1 = createElemWithText('p', 'Post ID: ' + para.id);
-        let author = await getUser(para.userId);
+        let author = getUser(para.userId);
         const paraElem2 = document.createElement('p', 'Author: ' + para.name + 'with ' + author.company.name); //stub
         const paraElem3 = document.createElement('p'); //stub
         const button = document.createElement("button"); //stub
