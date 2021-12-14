@@ -59,10 +59,16 @@ function deleteChildElements(parentElement){
 
 function addButtonListeners(){
 
-    const buttons = [];
-    buttons.push(document.querySelectorAll('button'));
+    let counter = 1;
+    let button  = document.getElementById( "button" + counter);
+    while ( button ){
+        button.addEventListener("click", function(e){toggleComments(e, postId)}, false);
+        button  = document.getElementById( "button" + ( ++counter ) + "menu" );
+        return button;
+    }
+    //buttons.push(document.querySelectorAll('button'));
     //buttons.addEventListener("click", function (e){toggleComments(e, postId)}, false);
-    return buttons;
+    return button;
 
 }
 
