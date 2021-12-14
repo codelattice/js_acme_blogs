@@ -30,7 +30,7 @@ function toggleCommentSection(postId){
     const section = document.getElementById('data-post-id == ${postId}');
 
     if (!section){
-        return section;
+        return null;
     }
     else{
         section.toggle('hide');
