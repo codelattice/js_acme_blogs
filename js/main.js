@@ -59,7 +59,8 @@ function deleteChildElements(parentElement){
 
 function addButtonListeners(){
 
-    const buttons = document.querySelectorAll('button');
+    const buttons = [];
+    buttons.append(document.querySelectorAll('button'));
     //buttons.addEventListener("click", function (e){toggleComments(e, postId)}, false);
     return buttons;
 
