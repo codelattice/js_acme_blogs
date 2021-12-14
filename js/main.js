@@ -60,15 +60,16 @@ function deleteChildElements(parentElement){
 function addButtonListeners(){
 
     let counter = 1;
-    let button  = document.getElementById("#main button" + counter);
-    while ( button ){
+    let button  = document.querySelectorAll("#main button");
+    /*while ( button ){
         button.addEventListener("click", function(e){toggleComments(e, postId)}, false);
         button  = document.getElementById( "button" + ( ++counter ) + "menu" );
         return button;
-    }
+    }*/
     //buttons.push(document.querySelectorAll('button'));
     //buttons.addEventListener("click", function (e){toggleComments(e, postId)}, false);
-    //return button;
+    
+    return button;
 
 }
 
