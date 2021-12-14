@@ -60,7 +60,7 @@ function deleteChildElements(parentElement){
 function addButtonListeners(){
 
     let counter = 1;
-    let button  = document.getElementById( "button" + counter);
+    let button  = document.getElementById("#main button" + counter);
     while ( button ){
         button.addEventListener("click", function(e){toggleComments(e, postId)}, false);
         button  = document.getElementById( "button" + ( ++counter ) + "menu" );
