@@ -33,7 +33,7 @@ function toggleCommentSection(postId){
         return section;
     }
     else{
-        section = toggle('hide');
+        section.toggle('hide');
         return section;
     }
 }
