@@ -68,7 +68,7 @@ function addButtonListeners(){
     }
     //buttons.push(document.querySelectorAll('button'));
     //buttons.addEventListener("click", function (e){toggleComments(e, postId)}, false);
-    return button;
+    //return button;
 
 }
 
