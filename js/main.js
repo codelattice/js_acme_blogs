@@ -34,7 +34,7 @@ function toggleCommentSection(postId){
     }
     else{
         section.toggle('hide');
-        return section;
+        return false;
     }
 }
 
